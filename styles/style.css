@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../assets/images/mj.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: calc(100vh - 1px);
+    display: flex;
+    align-items: flex-end;
+}
+
+.container {
+    background-color: goldenrod;
+    height: 100px;
+    width: 560px;
+    margin-left: 150px;
+    margin-bottom: 60px;
+}
+
+video { 
+    position: absolute;
+    top: 15px;
+    left: 155px;
+    border: 2px solid rgba(218, 165, 32, 0.733);
+}
