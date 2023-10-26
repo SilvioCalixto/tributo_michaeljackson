@@ -90,3 +90,19 @@ video {
     font-family: 'Alumni Sans Collegiate One';
 
 }
+
+#discografia {
+    background-color: aquamarine;
+    height: calc(100vh - 1px);
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Alumni Sans Collegiate One';
+}
+
+#outras_midias {
+    background-color: yellowgreen;
+    height: calc(100vh - 1px);
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Alumni Sans Collegiate One';
+}
