@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #index {
@@ -12,24 +13,22 @@
     background-attachment: scroll;
     height: calc(100vh - 1px);
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: end;
     font-family: 'Alumni Sans Collegiate One';
 }
 
 .container {
-    background-color: red;
-    height: calc(20vh - 1px);
-    width: 860px;
-    position: absolute;
-    bottom: 20px;
-    left: 40px;
+
+    height: 20vh;
+    width: 900px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.container a {
+.menu a {
     height: 100%;
     width: 215px;
     text-shadow: 1px 1px black;
@@ -46,32 +45,27 @@
     text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.349);
 }
 
-.container2 {
+.placard {
     height: 600px;
     width: 100px;
     position: absolute;
-    top: 50px;
+    top: 120px;
     right: 50px;
     font-family: 'Nabla';
     font-size: 30px;
 }
 
-.container2 span {
-    font-family:'Courier New';
-}
-
-.container2 {
+.placard {
     writing-mode: vertical-lr;
     text-orientation: upright;
 }
 
-
-
 video { 
+    border-radius: 20%;
     position: absolute;
     top: 45px;
-    left: 155px;
-    border-bottom: 2px groove rgba(218, 165, 32, 0.733);
+    left: 200px;
+    border: 2px groove rgba(218, 165, 32, 0.733);
 }
 
  @keyframes rotateHorizontal {  
@@ -83,11 +77,16 @@ video {
     }
 }
 
-.container2 {
+.placard {
     display:inline-block;
     animation: rotateHorizontal 8s linear infinite;
 }
 
 #biografia {
+    background-color: black;
+    height: calc(100vh - 1px);
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Alumni Sans Collegiate One';
 
 }
