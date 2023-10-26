@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-body {
+#index {
     background-image: url('../assets/images/mj.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,15 +17,25 @@ body {
 }
 
 .container {
-    height: 100px;
-    width: 702;
-    margin-left: 40px;
-    margin-bottom: 20px;
+    background-color: red;
+    height: calc(20vh - 1px);
+    width: 860px;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
+
+.container a {
+    height: 100%;
+    width: 215px;
+    text-shadow: 1px 1px black;
+    font-size: 50px;
+}
+
 
 .container a {
     text-decoration: none;
@@ -43,7 +53,11 @@ body {
     top: 50px;
     right: 50px;
     font-family: 'Nabla';
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.container2 span {
+    font-family:'Courier New';
 }
 
 .container2 {
@@ -52,18 +66,12 @@ body {
 }
 
 
-.menu1, .menu2, .menu3 {
-    height: 100%;
-    width: 234px;
-    text-shadow: 1px 1px black;
-    font-size: 50px;
-}
 
 video { 
     position: absolute;
-    top: 15px;
+    top: 45px;
     left: 155px;
-    border: 2px solid rgba(218, 165, 32, 0.733);
+    border-bottom: 2px groove rgba(218, 165, 32, 0.733);
 }
 
  @keyframes rotateHorizontal {  
@@ -78,4 +86,8 @@ video {
 .container2 {
     display:inline-block;
     animation: rotateHorizontal 8s linear infinite;
+}
+
+#biografia {
+
 }
