@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /* ----------------------PÁGINA INICIAL-------------------------- */
 #index {
     background-image: url('../assets/images/mj.jpg');
@@ -81,6 +83,8 @@ video {
     display:inline-block;
     animation: rotateHorizontal 8s linear infinite;
 }
+
+
 /* ------------------SEGUNDA PÁGINA-------------------------- */
 #biografia {
     background-color: black;
@@ -91,53 +95,10 @@ video {
 
 }
 
-header {
-    text-align: center;
-    margin: 50px;
-    font-family: 'Nabla';
-    font-size: 30px;
-    color: black;
-}
 
-main {
-    text-align: right;
-    display: flex;
-    justify-content: center;
-    flex-direction:row;
-    flex-wrap: wrap;
-    
-}
-
-section {
-    border: 2px solid black;
-    margin: 50px;
-    width: 80%;
-    display: flex;
-
-}
-
-section h3 {
-    text-align: center;
-}
-
-section img {
-    height: 300px;
-    width: 300px;
-
-}
-.texto {
-
-    background-color: yellow;
-}
-.texto p {
-    text-align: left;
-}
-.imagen {
-    width: 430px;
-}
 /* ---------------------------TERCEIRA PÁGINA------------------ */
 #discografia {
-    background-color: aquamarine;
+    background-color: rgb(29, 4, 4);
     height: calc(100vh - 1px);
 }
 
@@ -147,6 +108,61 @@ section img {
     font-family: 'Alumni Sans Collegiate One';
 
 }
+
+
+#discografia header {
+    text-align: center;
+    margin: 50px;
+    font-family: 'Nabla';
+    font-size: 30px;
+    color: black;
+}
+
+#discografia main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+}
+
+#discografia section {
+    border: 2px solid black;
+    margin: 50px;
+    width: 800px;
+    height: 300px;
+    display: flex;
+
+}
+
+#discografia section h3 {
+    text-align: center;
+}
+
+#discografia section img {
+    height: 100%;
+    width: 300px;
+
+}
+
+#fundo01 {
+    background-image: url('../assets/images/fundo01.jpg') ;
+    background-position: left center;
+    background-size: cover;
+}
+#fundo02 {
+    background-image: url('../assets/images/fundo02.jpg');
+}
+
+.texto p {
+    text-align: left;
+}
+.imagen {
+    border-left:  2px solid black;
+}
+
+
 /* ----------------------------ULTIMA PÁGINA */
 #outras_midias {
     background-color: yellowgreen;
