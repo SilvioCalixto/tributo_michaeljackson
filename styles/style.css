@@ -146,18 +146,44 @@ video {
 
 }
 
-#fundo01 {
-    background-image: url('../assets/images/fundo01.jpg') ;
+.fundo01, .fundo02 {
     background-position: left center;
     background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+
 }
-#fundo02 {
+
+#discografia h3 {
+    font-size: 30px;
+    padding: 15px;
+}
+
+#discografia p {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+#discografia h3, p {
+    background-color: rgba(0, 0, 0, 0.521);
+    background-size: cover;
+}
+
+
+.fundo01 {
+    order: 1;
+    background-image: url('../assets/images/fundo01.jpg') ;
+
+}
+.fundo02 {
     background-image: url('../assets/images/fundo02.jpg');
 }
 
-.texto p {
-    text-align: left;
-}
+
 .imagen {
     border-left:  2px solid black;
 }
