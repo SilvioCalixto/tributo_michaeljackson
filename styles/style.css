@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
+:root {
+    --first:#012E40;
+    --second:#025159;
+    --third:#038C8C;
+    --four:#03A696;;
+    --five:#F28705;
+
+}
 
 * {
     margin: 0;
@@ -15,7 +25,11 @@ header {
     height: 10vh;
     display: flex;
     justify-content: center;
-    background-color: red;
+    background-color:;
+    font-family:'Dancing Script';
+    font-size:30px;
+    margin-top:10px;
+    margin-bottom:10px;
 
 }
 
@@ -26,6 +40,7 @@ main {
 }
 
 section {
+    height: 80vh;
     width: 80vw;
     background-color: yellow;
     
@@ -35,31 +50,32 @@ footer {
     height: 10vh;
     display: flex;
     justify-content: center;
-    background-color: red;
+    background-color: black;
 }
 
 
 .container {
-
-    height: 100%;
-    width: 900px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
+.menu  {
+    margin-top: 5px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius:10px;
+    background-color:var(--first);
+}
+
 .menu a {
-    height: 100%;
-    width: 215px;
-    text-shadow: 1px 1px black;
-    font-size: 50px;
     text-decoration: none;
-    color: rgba(218, 165, 32, 0.733);
+
 }
 
 .menu a:hover {
-    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.349);
+
+    background-color: var(--five);
 }
 
 .attribution a {
@@ -68,11 +84,7 @@ footer {
 
 /* ----------------------PÁGINA INICIAL-------------------------- */
 #index {
-    background-image: url('../assets/images/mj.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    font-family: 'Alumni Sans Collegiate One';
+
 }
 
 .placard {
@@ -115,18 +127,13 @@ video {
 
 /* ------------------SEGUNDA PÁGINA-------------------------- */
 #biografia {
-    background: url('../assets/images/biografia.jpg');
-    font-family: 'Alumni Sans Collegiate One';
 
 }
 
 
 /* ---------------------------TERCEIRA PÁGINA------------------ */
 #discografia {
-    background-image: url('../assets/images/fundodisco.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #000000;
+
 }
 
 #discografia nav {
@@ -223,6 +230,5 @@ video {
 
 /* ----------------------------ULTIMA PÁGINA */
 #outras_midias {
-    background: url('../assets/images/outras-midias.jpg') center;
-    font-family: 'Alumni Sans Collegiate One';
+
 }
