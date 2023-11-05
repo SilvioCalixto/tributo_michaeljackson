@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    height: 16vh;
+    height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,11 +41,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    overflow: auto;
 }
 
 section {
-    height: 77vh;
     width: 82vw;
     background-color: var(--four);
     
@@ -55,7 +54,7 @@ footer {
     height: 3vh;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     background-color: var(--first);
 }
 
@@ -66,7 +65,6 @@ nav {
 }
 
 .pic {
-    height: 57vh;
     width: 80vw;
     display: flex;
     flex-direction: row;
@@ -236,6 +234,7 @@ svg text {
 
 .attribution {
     color: white;
+    margin-bottom: 5px;
 }
 .attribution a {
     text-decoration: none;
@@ -264,16 +263,15 @@ video {
     animation: rotateHorizontal 8s linear infinite;
 }
 /* ------------------SEGUNDA PÁGINA-------------------------- */
-#biografia {
 
-}
+
 
 #bio{
-    overflow: auto;
     letter-spacing: 1px;
     line-height: 1.5;
     margin: 10px;
     padding: 80px;
+    overflow: auto;
 }
 
 #bio img {
@@ -314,14 +312,7 @@ p::first-letter {
 
 /* ---------------------------TERCEIRA PÁGINA------------------ */
 
-#discografia main {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction:row;
-    flex-wrap: wrap;
-    
-}
+
 
 #discografia section {
     border: 2px solid black;
@@ -339,11 +330,10 @@ p::first-letter {
 #discografia section img {
     height: 100%;
     width: 300px;
-
 }
 
+
 #disco{
-    height: 77vh;
     width: 82vw;
     background-color: var(--four);
     overflow: auto;
@@ -351,8 +341,12 @@ p::first-letter {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 30px;
-    margin-bottom: 20px;
+}
+
+#disco h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    text-shadow: 1px 1px 1px  var(--five);
 }
 .fundo01, .fundo02 {
     background-position: left center;
@@ -398,5 +392,8 @@ p::first-letter {
 
 /* ----------------------------ULTIMA PÁGINA */
 #outras_midias {
+}
 
+#outras_midias img {
+    max-width: 300px;
 }
