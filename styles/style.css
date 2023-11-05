@@ -47,7 +47,7 @@ main {
 section {
     height: 75vh;
     width: 80vw;
-    background-color: var(--second);
+    background-color: var(--four);
     overflow: auto;
     
 }
@@ -122,7 +122,7 @@ svg text {
 	}
 }
 
-.wrapper {background-color: var(--second)};
+.wrapper {background-color: var(--four)};
 
 .attribution {
     color: white;
