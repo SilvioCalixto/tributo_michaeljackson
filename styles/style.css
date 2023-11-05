@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    height: 20vh;
+    height: 16vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -45,18 +45,17 @@ main {
 }
 
 section {
-    height: 75vh;
-    width: 80vw;
+    height: 77vh;
+    width: 82vw;
     background-color: var(--four);
-    overflow: auto;
     
 }
 
 footer {
-    height: 5vh;
+    height: 3vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background-color: var(--first);
 }
 
@@ -66,11 +65,120 @@ nav {
     align-items: center;
 }
 
+.pic {
+    height: 57vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--four);
+    margin-bottom: 10px;
+    gap: 40px;
+}
+
 span {
     color: rgb(14, 14, 14);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.377);
+
 }
 
+span:hover {
+    color:goldenrod;
+    text-shadow: 1px 1px 1px gray;
+}
+
+@keyframes box {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+    }
+  
+    10% {
+      transform: rotate(2deg);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+  
+    80% {
+      transform: rotate(-2deg);
+    }
+  
+    90% {
+      transform: rotate(2deg);
+    }
+  }
+
+.box {
+    order: 1;
+    width:220px;
+    margin-top: 40px;
+    animation: box 2s ease 0s infinite normal none;
+}
+
+.box1 {
+    order: 3;
+    width: 220px;
+    margin-top:40px;
+    animation: box1 2s ease 0s infinite normal none;
+
+}
+@keyframes box1 {
+    0% {
+      transform: translate(0);
+    }
+  
+    10% {
+      transform: translate(-2px, -2px);
+    }
+  
+    20% {
+      transform: translate(2px, -2px);
+    }
+  
+    30% {
+      transform: translate(-2px, 2px);
+    }
+  
+    40% {
+      transform: translate(2px, 2px);
+    }
+  
+    50% {
+      transform: translate(-2px, -2px);
+    }
+  
+    60% {
+      transform: translate(2px, -2px);
+    }
+  
+    70% {
+      transform: translate(-2px, 2px);
+    }
+  
+    80% {
+      transform: translate(-2px, -2px);
+    }
+  
+    90% {
+      transform: translate(2px, -2px);
+    }
+  
+    100% {
+      transform: translate(0);
+    }
+  }
 
 .menu  {
     height: 80px;
@@ -91,12 +199,14 @@ span {
     padding-top: 20px;
     text-shadow: 1px 1px 1px gray;
 
-
 }
 
 .menu:hover {
     background-color: var(--four);
 
+}
+.menu a:hover {
+    color:var(--five);
 }
 
 svg {
@@ -133,12 +243,11 @@ svg text {
 }
 
 video { 
+    order: 2;
     border-radius: 10%;
-    border: 2px groove  var(--five);
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border: 4px groove  var(--five);
+    margin-bottom: 20px;
+
 }
 
  @keyframes rotateHorizontal {  
@@ -157,6 +266,49 @@ video {
 /* ------------------SEGUNDA PÁGINA-------------------------- */
 #biografia {
 
+}
+
+#bio{
+    overflow: auto;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 10px;
+    padding: 80px;
+}
+
+#bio img {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px var(--five);
+
+}
+
+#bio h1 {
+    font-size: 80px;
+    text-shadow: 1px 1px 1px var(--five);
+}
+
+#bio h1, h4 {
+    text-align: center;
+}
+
+#bio h2 {
+    text-align: center;
+    margin-top:15px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px var(--five);
+}
+
+#bio p {
+    text-align: justify;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+p::first-letter {
+    margin-left: 10px;
+    font-size: 30px;
 }
 
 
@@ -190,6 +342,18 @@ video {
 
 }
 
+#disco{
+    height: 77vh;
+    width: 82vw;
+    background-color: var(--four);
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
 .fundo01, .fundo02 {
     background-position: left center;
     background-size: cover;
