@@ -64,6 +64,7 @@ nav {
     align-items: center;
 }
 
+
 .pic {
     width: 80vw;
     display: flex;
@@ -307,6 +308,7 @@ video {
 p::first-letter {
     margin-left: 10px;
     font-size: 30px;
+    text-shadow: 1px 1px 1px var(--five);
 }
 
 
@@ -391,25 +393,91 @@ p::first-letter {
 
 
 /* ----------------------------ULTIMA PÁGINA */
-#outras_midias h1 {
-    font-size: 80px;
-    text-shadow: 1px 1px 1px var(--five);
-}
 
-#outras_midias h1, p {
+.glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #A69C97;
+ }
+ 
+ .glitch {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 3px;
+    z-index: 1;
+ }
+ 
+ .glitch:before,
+ .glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+ }
+ 
+ .glitch:before {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #A62B1F;
+    z-index: -1;
+ }
+ 
+ .glitch:after {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #734C36;
+    z-index: -2;
+ }
+ 
+ @keyframes glitch-it {
+    0% {
+       transform: translate(0);
+    }
+    20% {
+       transform: translate(-2px, 2px);
+    }
+    40% {
+       transform: translate(-2px, -2px);
+    }
+    60% {
+       transform: translate(2px, 2px);
+    }
+    80% {
+       transform: translate(2px, -2px);
+    }
+    to {
+       transform: translate(0);
+    }
+ }
+
+#outras_midias  p {
+    text-align: justify;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
 }
 
-#outras_midias img {
+#outras_midias section img {
     max-width: 500px;
+    max-height: 500px;;
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 1px var(--five);
+
 }
 
 #outras_midias main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
+
