@@ -391,9 +391,25 @@ p::first-letter {
 
 
 /* ----------------------------ULTIMA PÁGINA */
-#outras_midias {
+#outras_midias h1 {
+    font-size: 80px;
+    text-shadow: 1px 1px 1px var(--five);
+}
+
+#outras_midias h1, p {
+    align-items: center;
 }
 
 #outras_midias img {
-    max-width: 300px;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#outras_midias main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
