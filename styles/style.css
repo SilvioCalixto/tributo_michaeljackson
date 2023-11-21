@@ -480,15 +480,90 @@ p::first-letter {
     flex-direction: column;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    .banner_headline {
+        padding:20px;
+    }
 
-}
+    .banner_headline h1 {
+        font-size:55px;
+    }
 
-@media (min-width: 768px) and (max-width: 1032px) {
+    .banner_headline h2 {
+        font-size: 17px;
+    }
 
-}
+    .banner_options {
+        height:auto;
+        flex-direction:column;
+    }
 
-@media (min-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
     
-}
+    .footer_menu {
+        flex-direction:column;
+    }
 
+    .footer_area {
+        flex-direction:column;
+        padding: 20px;
+    }
+
+    .footer_copy {
+        padding-left:20px;
+    }
+
+    header .container {
+        flex-direction:row;
+    }
+
+    nav ul {
+        flex-direction:column;
+        display: none;
+        position:absolute;
+        left:0;
+        width:100%;
+        background-color:#ffffff;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left:20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction:column;
+        justify-content:space-around;
+    }
+
+    #lasted {
+        padding-top: 35px;
+        margin-top: 35px;
+    }
+
+    #f1 {
+        text-align: center;
+        padding-left: 200px;
+    }
+
+    #f2 {
+        padding-left:140px;
+    }
+
+    #f3 {
+        padding-left: 150px;
+    }
+
+
+}
